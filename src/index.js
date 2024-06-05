@@ -3,12 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import UserLoginPage from './pages/UserLoginPage';
+import AdminLoginPage from './pages/AdminLoginPage';
+import PartnerLoginPage from './pages/PartnerLoginPage';
+
+import PromoCarousel from './components/Home/PromoCarousel';
+import Home1 from './components/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App />} />
+      <Route path='/UserLogin' element={<UserLoginPage />} />
+      <Route path='/AdminLogin' element={<AdminLoginPage />} />
+      <Route path='/PartnerLogin' element={<PartnerLoginPage />} />
+      <Route path='/Home' element={<Home1 />} />
+      <Route path='/PromoCarousel' element={<PromoCarousel />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
