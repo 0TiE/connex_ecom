@@ -12,7 +12,7 @@ function Home() {
       <PromoCarousel />
       <ProductSuppliers />
       <Categroies />
-    <TrendingProducts/>
+    
     </>
   );
 }
