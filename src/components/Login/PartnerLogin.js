@@ -7,6 +7,7 @@ import image from "../../images/Login.gif";
 import image2 from "../../images/connex360.png";
 import { useNavigate } from 'react-router-dom';
 
+
 function PartnerLogin() {
   const navigate=useNavigate();
   return (
@@ -39,10 +40,14 @@ function PartnerLogin() {
                   </Col>
                 </Form.Group>
               </Form>
-              <Form.Group className="mb-3">
+              <Form.Group className="mb-3 d-flex justify-content-between">
                 <a className="mt-5" href="#Forgot">
                   Forgot Password
                 </a>
+                <a className="mt-5" href="" style={{ textDecoration: 'none', color: 'black'}}>
+                  Don't have an account? Please <span className="Register" style={{ color: '#0d6efd'}} onClick={()=>navigate('./Signupform')}>Register</span>
+                </a>
+                
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Check

@@ -13,6 +13,9 @@ import PartnerLoginPage from './pages/PartnerLoginPage';
 
 import PromoCarousel from './components/Home/PromoCarousel';
 import Home1 from './components/Home/Home';
+import SignupForm from './components/Register/Signupform';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +27,7 @@ root.render(
       <Route path='/PartnerLogin' element={<PartnerLoginPage />} />
       <Route path='/Home' element={<Home1 />} />
       <Route path='/PromoCarousel' element={<PromoCarousel />} />
+      <Route path='/Signupform' element={<SignupForm />} />
     </Routes>
   </BrowserRouter>
 );

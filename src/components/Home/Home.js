@@ -10,9 +10,8 @@ function Home() {
     <>
       <Header />
       <PromoCarousel />
-      <ProductSuppliers />
+      
       <Categroies />
-    <TrendingProducts/>
     </>
   );
 }
