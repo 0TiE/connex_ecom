@@ -45,7 +45,7 @@ function PartnerLogin() {
                   Forgot Password
                 </a>
                 <a className="mt-5" href="" style={{ textDecoration: 'none', color: 'black'}}>
-                  Don't have an account? Please <span className="Register" style={{ color: '#0d6efd'}} onClick={()=>navigate('./Signupform')}>Register</span>
+                  Don't have an account? Please <span className="Register" style={{ color: '#0d6efd'}} onClick={()=>navigate('./Register')}>Register</span>
                 </a>
                 
               </Form.Group>
