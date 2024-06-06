@@ -27,7 +27,7 @@ root.render(
       <Route path='/PartnerLogin' element={<PartnerLoginPage />} />
       <Route path='/Home' element={<Home1 />} />
       <Route path='/PromoCarousel' element={<PromoCarousel />} />
-      <Route path='/Register' element={<Register/>} />
+      <Route path='/Register' element={<Register />} />
     </Routes>
   </BrowserRouter>
 );
