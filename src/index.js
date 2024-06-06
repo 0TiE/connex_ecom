@@ -14,6 +14,7 @@ import PartnerLoginPage from './pages/PartnerLoginPage';
 import PromoCarousel from './components/Home/PromoCarousel';
 import Home1 from './components/Home/Home';
 import Register from './components/Register/Register'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -28,6 +29,7 @@ root.render(
       <Route path='/Home' element={<Home1 />} />
       <Route path='/PromoCarousel' element={<PromoCarousel />} />
       <Route path='/Register' element={<Register />} />
+      <Route path='/Footer' element={<Footer />} />
     </Routes>
   </BrowserRouter>
 );

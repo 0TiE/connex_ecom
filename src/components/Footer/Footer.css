@@ -1,0 +1,12 @@
+.no-border {
+    border: none;
+  }
+  
+  .no-border .list-group-item {
+    border: none;
+    padding: 0.5rem 0;
+  }
+
+  .listheading{
+    color: #000;
+  }
