@@ -1,0 +1,29 @@
+.productheading{
+    font-weight: 500;
+}
+
+.productprice{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.productQuantity{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.quantitybox{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    height: 2rem;
+}
+
+.buynowbtn{
+    background-color: #02A1E6;
+}
+
+.addtocartbtn{
+    background-color: #43AC62;
+    border: none;
+}
+

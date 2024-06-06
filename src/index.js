@@ -15,7 +15,7 @@ import PromoCarousel from './components/Home/PromoCarousel';
 import Home1 from './components/Home/Home';
 import Register from './components/Register/Register'
 import Footer from './components/Footer/Footer'
-
+import SingleProduct from './components/SingleProduct/SingleProduct'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +30,7 @@ root.render(
       <Route path='/PromoCarousel' element={<PromoCarousel />} />
       <Route path='/Register' element={<Register />} />
       <Route path='/Footer' element={<Footer />} />
+      <Route path='/SingleProduct' element={<SingleProduct />} />
     </Routes>
   </BrowserRouter>
 );
