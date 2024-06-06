@@ -11,8 +11,6 @@ import { useNavigate } from 'react-router-dom';
 function Register() {
   const navigate=useNavigate();
 
-  const [validated, setValidated] = useState(false);
-
   const [currentStep, setCurrentStep] = useState(1);
 
   const handleSignInClick = () => {
@@ -21,16 +19,6 @@ function Register() {
 
   const handleNextClick = () => {
     setCurrentStep(currentStep + 1);
-  };
-
-  const handleNext = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
   };
 
   const handleBackClick = () => {
@@ -46,7 +34,7 @@ function Register() {
               <Col lg="7" className="mt-2 mb-3">
                 <h3>Registration Information</h3>
               </Col>
-              <Form noValidate validated={validated} onSubmit={handleNext}>
+              <Form>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridfirstname">
                     <Form.Label>First Name</Form.Label>
