@@ -1,13 +1,14 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import image2 from "../../images/c2.png";
-import image3 from "../../images/c1.png";
+import image2 from "../../../images/c2.png";
+import image3 from "../../../images/c1.png";
+
 import { Image } from "react-bootstrap";
-import "./PromoCarousel.css";
+import "./../Carousel/PromoCarousel.css";
 
 function PromoCarousel() {
   return (
-    <Carousel data-bs-theme="light" className="mt-5 custom-carousel">
+    <Carousel  data-bs-theme="light" className=" custom-carousel mt-3">
       <Carousel.Item>
         <Image
           className="d-block w-100 border-0 rounded-5"

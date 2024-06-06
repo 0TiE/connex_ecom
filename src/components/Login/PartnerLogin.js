@@ -57,9 +57,10 @@ function PartnerLogin() {
                 />
               </Form.Group>
 
-              <Button variant="info" className="text-white" size="lg"  onClick={()=>navigate('./Home')}>
+              <Button variant="info" className="text-white" size="lg"  onClick={()=>navigate('../Home')}>
                 Sign In
               </Button>
+             
             </Col>
             <Col lg="6" className="d-none d-lg-block">
               <Image src={image} rounded fluid />
