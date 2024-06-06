@@ -11,8 +11,9 @@ import UserLoginPage from './pages/UserLoginPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import PartnerLoginPage from './pages/PartnerLoginPage';
 
-import PromoCarousel from './components/Home/PromoCarousel';
+
 import Home1 from './components/Home/Home';
+import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

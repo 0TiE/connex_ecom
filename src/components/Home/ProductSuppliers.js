@@ -1,55 +1,52 @@
 import React from "react";
-import image from "../../images/RE1Mu3b.jpg";
-import image1 from "../../images/WhatsApp-Image-2023-01-04-at-12.26.18.jpg";
 
-import image2 from "../../images/WhatsApp-Image-2023-01-04-at-12.26.26.jpg";
-
+import image2 from "../../images/Lenovo-1.png";
+import image3 from "../../images/Delinea-1.png";
 import { Col, Image, Row } from "react-bootstrap";
 
 function ProductSuppliers() {
   return (
     <>
-      <Row className="m-5 ">
-        <h1>Products</h1>
-     
-        <Col lg={3}>
-          <Image src={image} thumbnail />
+      <Row
+        className="justify-content-center align-items-center m-5 border-black "
+        sm={6}
+      >
+        <Col lg={2} sm={1} className=" p-1 align-items-center ">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={3}>
-          <Image src={image1} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-        <Col lg={3}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-        <Col lg={3}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={3}>
-          <Image src={image1} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={3}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-
-        <Col lg={2}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center ">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2}>
-          <Image src={image1} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2}>
-          <Image src={image1} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2}>
-          <Image src={image} thumbnail />
+        <Col lg={2} sm={1} className=" p-1 align-items-center">
+          <Image src={image2} thumbnail />
         </Col>
-        
       </Row>
     </>
   );

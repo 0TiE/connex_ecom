@@ -1,9 +1,9 @@
-import Categroies from "./Categoies";
 import Header from "./Header";
 import ProductSuppliers from "./ProductSuppliers";
-import PromoCarousel from "./PromoCarousel";
 import React from "react";
-import TrendingProducts from "./TrendingProducts";
+import PromoCarousel from "./Carousel/PromoCarousel";
+import TrendingProducts from "./TrendingProducts/TrendingProducts.js";
+
 
 function Home() {
   return (
@@ -11,8 +11,8 @@ function Home() {
       <Header />
       <PromoCarousel />
       <ProductSuppliers />
-      <Categroies />
-    
+      <TrendingProducts />
+      
     </>
   );
 }
