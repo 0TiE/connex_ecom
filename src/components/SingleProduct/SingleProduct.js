@@ -12,11 +12,11 @@ function SingleProduct() {
     
     <Container className='mt-5'>
         <Breadcrumb className='mb-5'>
-            <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+            <Breadcrumb.Item href="#" className="breadcrumbitem">Home</Breadcrumb.Item>
             <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                Library
+                Products
             </Breadcrumb.Item>
-            <Breadcrumb.Item active>Data</Breadcrumb.Item>
+            <Breadcrumb.Item active>Single Product</Breadcrumb.Item>
         </Breadcrumb>
 
        <Row className='d-flex justify-content-center align-items-center'>
