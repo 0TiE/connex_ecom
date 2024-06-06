@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     <Container>
-      <Row>
+      <Row className="justify-content-center d-flex">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
                 <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>Buy</b></a></ListGroup.Item>
@@ -27,7 +27,7 @@ function Footer() {
         </Col>
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
-                <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>About ecom</b></a></ListGroup.Item>
+                <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>About</b></a></ListGroup.Item>
                 <ListGroup.Item><a href="#" style={linkStyle}>About Us</a></ListGroup.Item>
                 <ListGroup.Item><a href="#" style={linkStyle}>International</a></ListGroup.Item>
                 
@@ -50,6 +50,12 @@ function Footer() {
             </ListGroup>
         </Col>
         
+      </Row>
+
+      <Row className="justify-content-center mt-5 mb-5">
+            <Col xs="auto">
+                <p className="copyright-text" style={linkStyle}>&copy; 2024 <a href='#'>Connex</a>. All rights reserved.</p>
+            </Col>
       </Row>
     </Container>
   )

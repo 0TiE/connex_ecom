@@ -10,3 +10,11 @@
   .listheading{
     color: #000;
   }
+
+  .copyright-text {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0;
+}
