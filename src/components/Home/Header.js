@@ -11,11 +11,12 @@ import {
 } from "react-bootstrap";
 import React from "react";
 import image2 from "../../images/connex360.png";
-
+import { useNavigate } from 'react-router-dom';
 function Header() {
+  const navigate=useNavigate();
   return (
     <>
-      <Container className="">
+      <Container className="bg-light " >
         <Row className=" border-black border-bottom ">
           <Col className="text-end">Hello Partner !</Col>
           
@@ -43,7 +44,7 @@ function Header() {
           </Col>
 
           <Col>
-            <Button>Search</Button>
+            <Button onClick={()=>{navigate('/PartnerLogin ')}}>Search</Button>
           </Col>
 
           <Col>

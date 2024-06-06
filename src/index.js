@@ -11,12 +11,13 @@ import UserLoginPage from './pages/UserLoginPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import PartnerLoginPage from './pages/PartnerLoginPage';
 
-import PromoCarousel from './components/Home/PromoCarousel';
+
 import Home1 from './components/Home/Home';
 import Register from './components/Register/Register'
 import Footer from './components/Footer/Footer'
 import SingleProduct from './components/SingleProduct/SingleProduct'
 
+import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
