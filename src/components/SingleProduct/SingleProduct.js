@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
+import sliderimage1 from '../../images/slider.jpg'
 
 function SingleProduct() {
 
@@ -52,31 +53,31 @@ function SingleProduct() {
               <iframe className='youtubevideo' src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <img className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -93,31 +94,31 @@ function SingleProduct() {
               <iframe width="130" height="150" src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <img src={sliderimage1} />
               </SwiperSlide>
             </Swiper>
           </>
