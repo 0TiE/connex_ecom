@@ -15,7 +15,8 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
 import Accordion from 'react-bootstrap/Accordion';
-import Header from "../";
+import Header from "../../components/Home/Header";
+import Footer from "../../components/Footer/Footer";
 
 function SingleProduct() {
 
@@ -30,7 +31,7 @@ function SingleProduct() {
     <>
 
     <Header />
-    <Container className='mt-5'>
+    <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
             <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/" className="breadcrumbitem">
@@ -209,6 +210,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
+    <Footer />
 
     </>
   );
