@@ -41,7 +41,7 @@ function SingleProduct() {
         </Breadcrumb>
 
         <Row>
-            <Col lg='6'>
+            <Col lg='6' md='12' sm='12'>
             <>
             <Swiper
               style={{
@@ -130,28 +130,28 @@ function SingleProduct() {
           </>
             </Col>
             
-            <Col lg='6'>
-                <Col lg="8" className="mb-3">
+            <Col lg='6' md='12' sm='12'>
+                <Col lg="8" md='12' sm='12' className="mb-3">
                     <h3 className='productheading'>Cisco SG110 8 Port Gigabite Ethernet Switch</h3>
                     <h3 className='productheading'>SG110D-08-UK</h3>
                 </Col>
-                <Col lg="8" className="mt-5 mb-3">
+                <Col lg="8" md='12' sm='12' className="mt-5 mb-3">
                     <p className='productprice'>US $35.99</p>
                 </Col>
                 <Row>
-                    <Col>
+                    <Col lg='12' md='12' sm='12'>
                         <Row>
-                            <Col lg="5">
+                            <Col lg="5" md='6' sm='6'>
                                 <p className='productQuantity'>Quantity:</p>
                             </Col>
-                            <Col lg="4">
+                            <Col lg="4" md='6' sm='6'>
                                 <Form.Group as={Col} controlId="formGridquantitybox" className='quantitybox'>
                                     <Form.Control />
                                 </Form.Group>
                             </Col>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col lg='12' md='12' sm='12'>
                         <p className='availablesold mt-1'>28 available / 18 sold</p>
                     </Col>
                 </Row>
@@ -172,7 +172,7 @@ function SingleProduct() {
             </Col>
         </Row>
 
-        <Row>
+        <Row className='mt-5'>
           <Col>
               <h3>Related Items</h3>
           </Col>
