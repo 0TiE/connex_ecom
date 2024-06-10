@@ -13,17 +13,106 @@
 }
 
 .quantitybox{
-    box-sizing: border-box;
-    border: 1px solid #000;
-    height: 2rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
 }
 
 .buynowbtn{
     background-color: #02A1E6;
+    width: 50%;
 }
 
 .addtocartbtn{
     background-color: #43AC62;
     border: none;
+    width: 50%;
 }
 
+.breadcrumbitem{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-multi-item .carousel-item img {
+    margin: 0 10px;
+  }
+  
+  .carousel-multi-item .d-flex {
+    justify-content: center;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .mySwiper2 {
+    height: 50%;
+    width: 100%;
+}
+  
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  .youtubevideo{
+    width: 100%;
+    height: 100%;
+  }
+
+  .sliderimage{
+    width: 100%;
+    height: 100%;
+  }
