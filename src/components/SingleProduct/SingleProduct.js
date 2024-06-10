@@ -15,8 +15,6 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
 import Accordion from 'react-bootstrap/Accordion';
-import Header from "../../components/Home/Header";
-import Footer from "../../components/Footer/Footer";
 
 function SingleProduct() {
 
@@ -30,7 +28,6 @@ function SingleProduct() {
 
     <>
 
-    <Header />
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
@@ -145,7 +142,7 @@ function SingleProduct() {
                                 <p className='productQuantity'>Quantity:</p>
                             </Col>
                             <Col lg="4" md='6' sm='6'>
-                                <Form.Group as={Col} controlId="formGridquantitybox" className='quantitybox'>
+                                <Form.Group as={Col} controlId="formGridquantitybox" className='quantitybox' type="number">
                                     <Form.Control />
                                 </Form.Group>
                             </Col>
@@ -172,7 +169,7 @@ function SingleProduct() {
             </Col>
         </Row>
 
-        <Row className='mt-5'>
+        <Row className='mt-3'>
           <Col>
               <h3>Related Items</h3>
           </Col>
@@ -210,7 +207,6 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-    <Footer />
 
     </>
   );

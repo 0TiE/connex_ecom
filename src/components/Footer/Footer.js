@@ -15,7 +15,7 @@ function Footer() {
       };
 
   return (
-    <Container>
+    <Container className='mt-5'>
       <Row className="justify-content-center d-flex">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
