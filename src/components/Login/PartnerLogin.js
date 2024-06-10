@@ -41,10 +41,10 @@ function PartnerLogin() {
                 </Form.Group>
               </Form>
               <Form.Group className="mb-3 d-flex justify-content-between">
-                <a className="mt-5" href="#Forgot">
+                <a className="" href="#Forgot">
                   Forgot Password
                 </a>
-                <a className="mt-5" href="" style={{ textDecoration: 'none', color: 'black'}}>
+                <a className="" href="" style={{ textDecoration: 'none', color: 'black'}}>
                   Don't have an account? Please <span className="Register" style={{ color: '#0d6efd'}} onClick={()=>navigate('../Register')}>Register </span> 
                 </a>
                 

@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     <Container>
-      <Row className="justify-content-center d-flex">
+      <Row className="justify-content-center d-flex ">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
                 <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>Buy</b></a></ListGroup.Item>

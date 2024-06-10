@@ -18,6 +18,7 @@ import Footer from './components/Footer/Footer'
 import SingleProduct from './components/SingleProduct/SingleProduct'
 
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
+import SingleProductView from './pages/SingleProductView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,6 +33,7 @@ root.render(
       <Route path='/Register' element={<Register />} />
       <Route path='/Footer' element={<Footer />} />
       <Route path='/SingleProduct' element={<SingleProduct />} />
+      <Route path='/products/SingleProductView' element={<SingleProductView />} />
     </Routes>
   </BrowserRouter>
 );

@@ -16,7 +16,7 @@ function Header() {
   const navigate=useNavigate();
   return (
     <>
-      <Container className="bg-light " >
+      <Container className=" p-2" >
         <Row className=" border-black border-bottom ">
           <Col className="text-end">Hello Partner !</Col>
           
@@ -44,15 +44,14 @@ function Header() {
           </Col>
 
           <Col>
-            <Button onClick={()=>{navigate('/PartnerLogin ')}}>Search</Button>
+            <Button onClick={()=>{navigate('/products/SingleProductView')}}>Search</Button>
           </Col>
 
           <Col>
             <i className="bi bi-person h4"></i>
             &nbsp;&nbsp;&nbsp;
             <i className="bi bi-cart3 medium-icon h4"></i>
-            &nbsp;&nbsp;&nbsp;
-            <i className="bi bi-heart medium-icon h4"></i>
+           
           </Col>
         </Row>
       </Container>
