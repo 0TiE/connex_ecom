@@ -15,6 +15,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
 import Accordion from 'react-bootstrap/Accordion';
+import {Card,Image} from "react-bootstrap/";
 
 function SingleProduct() {
 
@@ -169,10 +170,46 @@ function SingleProduct() {
             </Col>
         </Row>
 
-        <Row className='mt-3'>
+        <Row className='mt-5 mb-5'>
           <Col>
-              <h3>Related Items</h3>
+            <h3>Related Items</h3>
           </Col>
+          <Row  className="justify-content-between mt-5 mb-5">
+            <Card style={{ width: "15rem" ,}}className="border-0 ">
+              <Image
+                src="https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png"
+                className="card-img-top"
+                alt="Chicago Skyscrapers"
+                fluid
+              />
+
+            </Card>
+            <Card style={{ width: "15rem" }}className="border-0">
+              <Image
+                src="https://abansit.lk/frontend_assets/img/products/LPABMONM215TN1.png"
+                className="card-img-top"
+                alt="Chicago Skyscrapers"
+                fluid
+              />
+                  
+            </Card>
+            <Card style={{ width: "15rem" }}className="border-0">
+              <Image
+                src="https://abansit.lk/frontend_assets/img/products/F55V4-560.png"
+                className="card-img-top"
+                alt="Chicago Skyscrapers"
+                fluid
+              />
+            </Card>
+            <Card style={{ width: "15rem" }}className="border-0">
+              <Image
+                src="https://abansit.lk/frontend_assets/img/products/MSIGF63I516512.png"
+                className="card-img-top"
+                alt="Chicago Skyscrapers"
+                fluid
+              />
+            </Card>
+          </Row>
         </Row>
 
         <Row className='mt-5'>

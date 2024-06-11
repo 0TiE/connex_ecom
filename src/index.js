@@ -17,6 +17,7 @@ import Register from './components/Register/Register'
 import Footer from './components/Footer/Footer'
 import SingleProduct from './components/SingleProduct/SingleProduct'
 import Cart from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout'
 
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
@@ -34,6 +35,7 @@ root.render(
       <Route path='/Footer' element={<Footer />} />
       <Route path='/SingleProduct' element={<SingleProduct />} />
       <Route path='/Cart' element={<Cart />} />
+      <Route path='/Checkout' element={<Checkout />} />
     </Routes>
   </BrowserRouter>
 );
