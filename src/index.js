@@ -18,6 +18,7 @@ import Footer from './components/Footer/Footer'
 import SingleProduct from './components/SingleProduct/SingleProduct'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
+import OrderTrack from './components/OrderTrack/OrderTrack'
 
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
@@ -36,6 +37,7 @@ root.render(
       <Route path='/SingleProduct' element={<SingleProduct />} />
       <Route path='/Cart' element={<Cart />} />
       <Route path='/Checkout' element={<Checkout />} />
+      <Route path='/OrderTrack' element={<OrderTrack />} />
     </Routes>
   </BrowserRouter>
 );

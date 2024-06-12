@@ -49,9 +49,132 @@ function Checkout() {
               </Col>
             </Row>
             <Row>
-                <Col xs='12' md='6'>
-                    <h6><b>Ship to Select a Shipping Address</b></h6>
+                <Col lg="7" className="mt-2 mb-3">
+                    <h5><b>Billing Details</b></h5>
                 </Col>
+                <Form>
+                    <Form.Group className="mb-3" as={Col} controlId="formGridorganizationname">
+                        <Form.Label>Organization Name</Form.Label>
+                        <Form.Control type="text" required />
+                    </Form.Group>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridprimaryaddress">
+                        <Form.Label>Address</Form.Label>
+                        <Form.Control type="text" required />
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridcity">
+                        <Form.Label>City</Form.Label>
+                        <Form.Control type="text" required />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridcountry">
+                        <Form.Label>Country</Form.Label>
+                        <Form.Select defaultValue="Select country">
+                            <option>Select country</option>
+                            <option>...</option>
+                        </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridState">
+                        <Form.Label>State/Province</Form.Label>
+                        <Form.Select defaultValue="N/A">
+                            <option>N/A</option>
+                            <option>Eastern</option>
+                            <option>North Central</option>
+                            <option>Northern</option>
+                            <option>North Western</option>
+                            <option>Sabaragamuwa</option>
+                            <option>Southern</option>
+                            <option>Uva</option>
+                            <option>Western</option>
+                        </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridZip">
+                        <Form.Label>Zip/Postal Code</Form.Label>
+                        <Form.Control />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridphone">
+                        <Form.Label>Company Phone</Form.Label>
+                        <Form.Control type="text" required maxLength="10"/>
+                        </Form.Group>
+                    </Row>
+                </Form>
+            </Row>
+            <Row>
+                <Col lg="7" className="mt-2 mb-3">
+                    <h5><b>Ship To a Different Address</b></h5>
+                </Col>
+                <Form>
+                    <Form.Group className="mb-3" as={Col} controlId="formGridorganizationname">
+                        <Form.Label>Organization Name</Form.Label>
+                        <Form.Control type="text" required />
+                    </Form.Group>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridprimaryaddress">
+                        <Form.Label>Address</Form.Label>
+                        <Form.Control type="text" required />
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridcity">
+                        <Form.Label>City</Form.Label>
+                        <Form.Control type="text" required />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridcountry">
+                        <Form.Label>Country</Form.Label>
+                        <Form.Select defaultValue="Select country">
+                            <option>Select country</option>
+                            <option>...</option>
+                        </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridState">
+                        <Form.Label>State/Province</Form.Label>
+                        <Form.Select defaultValue="N/A">
+                            <option>N/A</option>
+                            <option>Eastern</option>
+                            <option>North Central</option>
+                            <option>Northern</option>
+                            <option>North Western</option>
+                            <option>Sabaragamuwa</option>
+                            <option>Southern</option>
+                            <option>Uva</option>
+                            <option>Western</option>
+                        </Form.Select>
+                        </Form.Group>
+
+                        <Form.Group as={Col} controlId="formGridZip">
+                        <Form.Label>Zip/Postal Code</Form.Label>
+                        <Form.Control />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridphone">
+                        <Form.Label>Company Phone</Form.Label>
+                        <Form.Control type="text" required maxLength="10"/>
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="my-3">
+                    <Col className="d-flex justify-content-start">
+                        <Button variant="info" className="text-white" size="lg">
+                        Submit
+                        </Button>
+                    </Col>
+                </Row>
+                </Form>
             </Row>
             <Row>
                 <Col xs='12' md='6' className='mt-5'>
