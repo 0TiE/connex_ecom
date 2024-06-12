@@ -1,0 +1,72 @@
+#bar-progress {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#bar-progress .step {
+    display: inline-block;
+}
+
+#bar-progress .step .number-container {
+    display: inline-block;
+    border: solid 1px #0956BF;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+#bar-progress .step.step-active .number-container {
+    background-color: #0956BF;
+}
+
+#bar-progress .step .number-container .number {
+    font-weight: 700;
+    font-size: .8em;
+    line-height: 1.75em;
+    display: block;
+    text-align: center;
+}
+
+#bar-progress .step.step-active .number-container .number {
+    color: white;
+}
+
+#bar-progress .step h5 {
+    display: inline;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+#bar-progress .seperator {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #0956BF;
+    margin: auto 20px;
+}
+
+
+@media (max-width: 767px) {
+    #bar-progress {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+  
+    .step {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .step .number-container {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  
+    .seperator {
+      display: none;
+    }
+  }

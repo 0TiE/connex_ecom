@@ -5,57 +5,77 @@ import {
   Dropdown,
   DropdownButton,
   Form,
-  Image,
   InputGroup,
+  Navbar,
+  Nav,
+  FormControl,
   Row,
 } from "react-bootstrap";
 import React from "react";
 import image2 from "../../images/connex360.png";
 import { useNavigate } from 'react-router-dom';
+import { FaSearch } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Header.css';
+
 function Header() {
   const navigate=useNavigate();
   return (
     <>
-      <Container className="bg-light " >
-        <Row className=" border-black border-bottom ">
-          <Col className="text-end">Hello Partner !</Col>
-          
-          <Col className="text-end ">Daily Deals</Col>
-          <Col className="text-success">Help & Support</Col>
-        </Row>
 
-        <Row className="justify-content-center mt-3">
-          <Col lg="2">
-            <Image src={image2} fluid />
-          </Col>
-
-          <Col lg="7">
-            <InputGroup>
-              <Form.Control aria-label=" Text input with dropdown button" />
-              <DropdownButton
-                variant="outline-secondary"
-                title="categories"
-                id="input-group-dropdown-2"
-                align="end"
-              >
-                <Dropdown.Item>ok</Dropdown.Item>
-              </DropdownButton>
-            </InputGroup>
-          </Col>
-
+      <Container className="mt-3">
+        <Row className="d-flex justify-content-between">
           <Col>
-            <Button onClick={()=>{navigate('/PartnerLogin ')}}>Search</Button>
+            <h6 className="text">Hello Partner !</h6>
           </Col>
-
-          <Col>
-            <i className="bi bi-person h4"></i>
-            &nbsp;&nbsp;&nbsp;
-            <i className="bi bi-cart3 medium-icon h4"></i>
-            &nbsp;&nbsp;&nbsp;
-            <i className="bi bi-heart medium-icon h4"></i>
+          <Col className="d-flex justify-content-end">
+            <h6 className="mr-3 text">Daily Deals</h6>
+            <h6 className="helptext text-success">Help & Support</h6>
           </Col>
         </Row>
+        <hr></hr>
       </Container>
+    <Navbar expand="lg mb-5">
+        <Container>
+          <Navbar.Brand href="#home"><img src={image2} alt="logo" className="logo"/></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
+            <Nav className="mx-auto">
+              <Form className="d-flex w-100">
+                <div>
+                <InputGroup>
+                  <div className="dropdownbtn">
+                  <DropdownButton
+                    as={InputGroup.Prepend}
+                    variant="outline-secondary"
+                    title="Categories"
+                    id="input-group-dropdown-1"
+                  >
+                    <Dropdown.Item href="#">Category 1</Dropdown.Item>
+                    <Dropdown.Item href="#">Category 2</Dropdown.Item>
+                    <Dropdown.Item href="#">Category 3</Dropdown.Item>
+                  </DropdownButton>
+                  </div>
+                  <FormControl
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="primary">
+                    <FaSearch />
+                  </Button>
+                </InputGroup>
+                </div>
+              </Form>
+            </Nav>
+            <Nav className="ml-auto">
+              <Nav.Link href="#"><i className="bi bi-person h4"></i> Logout</Nav.Link>
+              <Nav.Link href="#"><i className="bi bi-cart3 h4"></i></Nav.Link>
+            </Nav> 
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
