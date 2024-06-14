@@ -5,7 +5,7 @@ import { Card, Image, Row, Container, Carousel } from "react-bootstrap";
 // import image4 from "../../../images/TPE-LG80-4-550x550.jpeg";
 // import image5 from "../../../images/lenovo.jpeg";
 // import { Image } from "react-bootstrap";
-import ReactCardSlider from 'react-card-slider-component';
+
 function TrendingProducts() {
   const slides = [
     {image:"https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png",title:"This is a title",description:"This is a description",brand: 'Brand 2',

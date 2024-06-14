@@ -24,20 +24,20 @@ function Header() {
     <>
 
       <Container className="mt-3">
-        <Row className="d-flex justify-content-between">
+        <Row className="d-flex justify-content-between border-bottom">
           <Col>
             <h6 className="text">Hello Partner !</h6>
           </Col>
           <Col className="d-flex justify-content-end">
             <h6 className="mr-3 text">Daily Deals</h6>
-            <h6 className="helptext text-success">Help & Support</h6>
+            <h6 className=" text-success">Help & Support</h6>
           </Col>
         </Row>
-        <hr></hr>
+       
       </Container>
     <Navbar expand="lg mb-5">
         <Container>
-          <Navbar.Brand href="#home"><img src={image2} alt="logo" className="logo"/></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={image2} alt="logo" className="w-50 "/></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
             <Nav className="mx-auto">
@@ -70,8 +70,9 @@ function Header() {
               </Form>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="#"><i className="bi bi-person h4"></i> Logout</Nav.Link>
+              <Nav.Link href="#"><i className="bi bi-person h4"></i> </Nav.Link>
               <Nav.Link href="#"><i className="bi bi-cart3 h4"></i></Nav.Link>
+              <Nav.Link href="#"><i className="bi bi-heart h4"></i></Nav.Link>
             </Nav> 
           </Navbar.Collapse>
         </Container>
