@@ -31,7 +31,7 @@ const products = Array.from({ length: 20 }, (_, idx) => ({
   price: 1280 + idx * 10,
   oldPrice: 1980 + idx * 10,
   imageUrl: imageUrls[idx % imageUrls.length],  
-  rearImageUrl: imageUrls[(idx + 1) % imageUrls.length], // Using next image as rear image
+  rearImageUrl: imageUrls[(idx + 1) % imageUrls.length], 
 }));
 
 const itemsPerPage = 8;
@@ -65,11 +65,10 @@ function ProductFilter() {
     setCurrentPage(page);
   };
 
-  const paginatedProducts = useMemo(() => {
-    const start = (currentPage - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    return products.slice(start, end);
-  }, [currentPage, products]);
+  const paginatedProducts = products.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return ( 
     <Container className="mt-5 mb-5">
@@ -77,64 +76,115 @@ function ProductFilter() {
         <Col md={3}>
           <h4>Filter</h4>
           <div className="card">
-            {['Brands', 'Category', 'Price range', 'Warranty'].map((title, idx) => (
-              <article className="filter-group" key={idx}>
-                <header className="card-header">
-                  <a
-                    href="#!"
-                    onClick={() => toggleFilter(`collapse_${idx + 1}`)}
-                    aria-expanded={filters[`collapse_${idx + 1}`]}
-                    className="titleheading"
-                  >
-                    <i className={`icon-control fa ${filters[`collapse_${idx + 1}`] ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
-                    <h6 className="title">{title}</h6>
-                  </a>
-                </header>
-                <div className={`filter-content collapse ${filters[`collapse_${idx + 1}`] ? 'show' : ''}`} id={`collapse_${idx + 1}`}>
-                  <div className="card-body">
-                    {idx < 2 && Array.from({ length: 5 }).map((_, subIdx) => (
-                      <Form.Check
-                        key={subIdx}
-                        type="checkbox"
-                        label={`${title.slice(0, -1)} ${subIdx + 1}`}
-                        className="custom-control custom-checkbox"
-                      />
-                    ))}
-                    {idx === 2 && (
-                      <>
-                        <Form.Range className="custom-range" min="0" max="100" />
-                        <Row>
-                          <Col md={6}>
-                            <Form.Group>
-                              <Form.Label>Min</Form.Label>
-                              <Form.Control type="number" placeholder="$0" />
-                            </Form.Group>
-                          </Col>
-                          <Col md={6} className="text-right">
-                            <Form.Group>
-                              <Form.Label>Max</Form.Label>
-                              <Form.Control type="number" placeholder="$1000" />
-                            </Form.Group>
-                          </Col>
-                        </Row>
-                        <Button className="btn-block" variant="primary">Apply</Button>
-                      </>
-                    )}
-                    {idx === 3 && (
-                      ['Any condition', 'Brand new', 'Used items', 'Very old'].map((condition, subIdx) => (
-                        <Form.Check
-                          key={subIdx}
-                          type="radio"
-                          name="myfilter_radio"
-                          label={condition}
-                          className="custom-control custom-radio"
-                        />
-                      ))
-                    )}
-                  </div>
+            <article className="filter-group">
+              <header className="card-header">
+                <a
+                  href="#!"
+                  onClick={() => toggleFilter('collapse_1')}
+                  aria-expanded={filters.collapse_1}
+                  className="titleheading"
+                >
+                  <i className={`icon-control fa ${filters.collapse_1 ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+                  <h6 className="title">Brands</h6>
+                </a>
+              </header>
+              <div className={`filter-content collapse ${filters.collapse_1 ? 'show' : ''}`} id="collapse_1">
+                <div className="card-body">
+                  {Array(5).fill().map((_, idx) => (
+                    <Form.Check
+                      key={idx}
+                      type="checkbox"
+                      label={`Brand ${idx + 1}`}
+                      className="custom-control custom-checkbox"
+                    />
+                  ))}
                 </div>
-              </article>
-            ))}
+              </div>
+            </article>
+            <article className="filter-group">
+              <header className="card-header">
+                <a
+                  href="#!"
+                  onClick={() => toggleFilter('collapse_2')}
+                  aria-expanded={filters.collapse_2}
+                  className="titleheading"
+                >
+                  <i className={`icon-control fa ${filters.collapse_2 ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+                  <h6 className="title">Category</h6>
+                </a>
+              </header>
+              <div className={`filter-content collapse ${filters.collapse_2 ? 'show' : ''}`} id="collapse_2">
+                <div className="card-body">
+                  {Array(5).fill().map((_, idx) => (
+                    <Form.Check
+                      key={idx}
+                      type="checkbox"
+                      label={`Category ${idx + 1}`}
+                      className="custom-control custom-checkbox"
+                    />
+                  ))}
+                </div>
+              </div>
+            </article>
+            <article className="filter-group">
+              <header className="card-header">
+                <a
+                  href="#!"
+                  onClick={() => toggleFilter('collapse_3')}
+                  aria-expanded={filters.collapse_3}
+                  className="titleheading"
+                >
+                  <i className={`icon-control fa ${filters.collapse_3 ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+                  <h6 className="title">Price range</h6>
+                </a>
+              </header>
+              <div className={`filter-content collapse ${filters.collapse_3 ? 'show' : ''}`} id="collapse_3">
+                <div className="card-body">
+                  <Form.Range className="custom-range" min="0" max="100" />
+                  <Row>
+                    <Col md={6}>
+                      <Form.Group>
+                        <Form.Label>Min</Form.Label>
+                        <Form.Control type="number" placeholder="$0" />
+                      </Form.Group>
+                    </Col>
+                    <Col md={6} className="text-right">
+                      <Form.Group>
+                        <Form.Label>Max</Form.Label>
+                        <Form.Control type="number" placeholder="$1000" />
+                      </Form.Group>
+                    </Col>
+                  </Row>
+                  <Button className="btn-block" variant="primary">Apply</Button>
+                </div>
+              </div>
+            </article>
+            <article className="filter-group">
+              <header className="card-header">
+                <a
+                  href="#!"
+                  onClick={() => toggleFilter('collapse_4')}
+                  aria-expanded={filters.collapse_4}
+                  className="titleheading"
+                >
+                  <i className={`icon-control fa ${filters.collapse_4 ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+                  <h6 className="title">Warranty</h6>
+                </a>
+              </header>
+              <div className={`filter-content collapse ${filters.collapse_4 ? 'show' : ''}`} id="collapse_4">
+                <div className="card-body">
+                  {['Any condition', 'Brand new', 'Used items', 'Very old'].map((condition, idx) => (
+                    <Form.Check
+                      key={idx}
+                      type="radio"
+                      name="myfilter_radio"
+                      label={condition}
+                      className="custom-control custom-radio"
+                    />
+                  ))}
+                </div>
+              </div>
+            </article>
           </div>
         </Col>
         <Col md={9}>
@@ -169,31 +219,48 @@ function ProductFilter() {
             </div>
           </header>
 
-          <div className={`product-grid ${view === 'list' ? 'list-view' : ''}`}>
+          <Row>
             {paginatedProducts.map((product) => (
-              <div className="product" key={product.id}>
-                <div className="product-img">
-                  <img src={product.imageUrl} alt="front product image" />
-                  <img src={product.rearImageUrl} alt="rear product image" className="rear-img" />
-                </div>
-                <div className="product-info">
-                  <div>
-                    <span className="product-name">{product.name}</span>
-                    <span className="product-price">${product.price.toFixed(2)}</span>
-                  </div>
-                  <a href="#!" className="product-btn">Buy now</a>
-                </div>
-              </div>
+              <Col key={product.id} md={view === 'grid' ? 4 : 12} className="mb-4">
+                <Card className={`card-product-${view}`}>
+                  <Row className={view === 'list' ? 'no-gutters' : ''}>
+                    <Col md={view === 'list' ? 4 : 12}>
+                      <Image
+                        src={product.imageUrl}
+                        className="card-img-top"
+                        alt={product.name}
+                        fluid
+                      />
+                    </Col>
+                    <Col md={view === 'list' ? 8 : 12}>
+                      <Card.Body>
+                        <Card.Title>{product.name}</Card.Title>
+                        <div className="price-wrap mt-2">
+                          <span className="price">${product.price}</span>
+                          <del className="price-old">${product.oldPrice}</del>
+                        </div>
+                        <Button className={`btn-block ${view === 'list' ? 'btn-sm' : ''}`} variant="primary">Add to cart</Button>
+                      </Card.Body>
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
             ))}
-          </div>
+          </Row>
 
-          <nav className="mt-4">
+          <nav className="mt-4" aria-label="Page navigation sample">
             <ul className="pagination">
-              {Array.from({ length: totalPages }, (_, idx) => (
-                <li className={`page-item ${currentPage === idx + 1 ? 'active' : ''}`} key={idx}>
-                  <a className="page-link" href="#!" onClick={() => handlePageChange(idx + 1)}>{idx + 1}</a>
+              <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+                <a className="page-link" href="#!" onClick={() => handlePageChange(currentPage - 1)}>Previous</a>
+              </li>
+              {[...Array(totalPages).keys()].map((num) => (
+                <li key={num + 1} className={`page-item ${currentPage === num + 1 ? 'active' : ''}`}>
+                  <a className="page-link" href="#!" onClick={() => handlePageChange(num + 1)}>{num + 1}</a>
                 </li>
               ))}
+              <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+                <a className="page-link" href="#!" onClick={() => handlePageChange(currentPage + 1)}>Next</a>
+              </li>
             </ul>
           </nav>
         </Col>
