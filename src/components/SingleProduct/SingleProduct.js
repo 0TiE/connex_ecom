@@ -15,7 +15,8 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
 import Accordion from 'react-bootstrap/Accordion';
-
+import Header from "../Home/Header";
+import Footer from "../Footer/Footer";
 function SingleProduct() {
 
     const breadcrumbitem = {
@@ -27,7 +28,7 @@ function SingleProduct() {
   return (
 
     <>
-
+<Header/>
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
@@ -94,7 +95,7 @@ function SingleProduct() {
               className="mySwiper mt-5"
             >
               <SwiperSlide className='ac'>
-              <iframe width="130" height="150" src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe   width="130" height="150" src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </SwiperSlide>
               <SwiperSlide>
                 <img src={sliderimage1} />
@@ -177,8 +178,8 @@ function SingleProduct() {
 
         <Row className='mt-5'>
           <Col>
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
+              <Accordion defaultActiveKey="1">
+                <Accordion.Item eventKey="1">
                   <Accordion.Header><b>Description</b></Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -207,7 +208,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-
+<Footer/>
     </>
   );
 }

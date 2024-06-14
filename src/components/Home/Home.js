@@ -3,6 +3,7 @@ import ProductSuppliers from "./ProductSuppliers";
 import React from "react";
 import PromoCarousel from "./Carousel/PromoCarousel";
 import TrendingProducts from "./TrendingProducts/TrendingProducts.js";
+import Footer from "../Footer/Footer.js";
 
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
       {/* <Categroies/> */}
       <ProductSuppliers />
       <TrendingProducts />
-      
+      <Footer/>
     </>
   );
 }
