@@ -1,0 +1,89 @@
+.logo {
+  max-height: 60px;
+  max-width: 220px;
+}
+
+.text{
+  font-weight: 300;
+}
+
+.helptext{
+  margin-left: 15px;
+  font-weight:300;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-collapse .ml-auto {
+  margin-left: auto;
+}
+
+.d-flex .form-control {
+  width: 250px;
+}
+
+.navbar .navbar-nav {
+  align-items: center;
+}
+
+.navbar .form-inline {
+  flex-grow: 1;
+  max-width: 600px; 
+}
+
+.navbar .form-inline .input-group {
+  width: 100%;
+}
+
+.secondarybtn {
+  background-color: #02A1E6;
+}
+
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: inline-block;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+  
+  .navbar-collapse .ml-auto {
+    margin-left: 0;
+  }
+
+  .navbar .navbar-nav {
+    align-items: flex-start;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+}
+
+@media (max-width: 434px){
+  .text,.helptext{
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 398px){
+  .text,.helptext{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 363px){
+  .text,.helptext{
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width:435px){
+  .dropdownbtn{
+    display: none;
+  }
+}

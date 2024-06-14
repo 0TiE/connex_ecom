@@ -15,7 +15,7 @@ function Footer() {
       };
 
   return (
-    <Container className=' me-1'>
+    <Container className='mt-5'>
       <Row className="justify-content-center d-flex">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
@@ -52,9 +52,9 @@ function Footer() {
         
       </Row>
 
-      <Row className="justify-content-center m-5 ms-5">
+      <Row className="justify-content-center mt-5 mb-5">
             <Col xs="auto">
-                {/* <p className="copyright-text" style={linkStyle}>&copy; 2024 <a href='#'>Connex</a>. All rights reserved.</p> */}
+                <p className="copyright-text" style={linkStyle}>&copy; 2024 <a href='#'>Connex</a>. All rights reserved.</p>
             </Col>
       </Row>
     </Container>
