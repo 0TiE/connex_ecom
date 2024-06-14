@@ -19,6 +19,7 @@ import SingleProduct from './components/SingleProduct/SingleProduct'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
 import OrderTrack from './components/OrderTrack/OrderTrack'
+import ProductFilter from './components/ProductFilter/ProductFilter'
 
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
@@ -38,6 +39,7 @@ root.render(
       <Route path='/Cart' element={<Cart />} />
       <Route path='/Checkout' element={<Checkout />} />
       <Route path='/OrderTrack' element={<OrderTrack />} />
+      <Route path='/ProductFilter' element={<ProductFilter />} />
     </Routes>
   </BrowserRouter>
 );

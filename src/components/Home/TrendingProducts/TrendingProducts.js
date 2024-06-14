@@ -7,7 +7,7 @@ import "./../TrendingProducts/TrendingProducts.css";
 function TrendingProducts() {
   return (
     <>
- 
+    
     </>
   );
 }
