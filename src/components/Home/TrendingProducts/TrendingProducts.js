@@ -194,6 +194,7 @@ function TrendingProducts() {
       </div>
 
       {/* <ReactCardSlider slides={slides}/> */}
+  
     </>
   );
 }

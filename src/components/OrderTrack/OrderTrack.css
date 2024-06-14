@@ -1,0 +1,41 @@
+.cardbody{
+    background-color: #cde3eb;
+}
+
+.cardtitle{
+    font-size: 28px;
+    font-weight: 700;
+    color: #000C66;
+}
+
+.cardtext{
+    color: #11228B;
+}
+
+.contactus{
+    color: #0956BF;
+}
+
+.card-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardbody {
+    padding: 30px 50px; 
+  }
+
+.no-vertical-borders tbody tr td, 
+.no-vertical-borders thead tr th {
+    border-left: none;
+    border-right: none;
+}
+
+.trackingno{
+    margin-left: 15px;
+}
+
+.mainheading{
+    border-bottom: none;
+}
