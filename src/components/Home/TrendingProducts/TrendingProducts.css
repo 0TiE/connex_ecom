@@ -1,0 +1,30 @@
+.trending_products {
+  margin-top: 100px;
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-container img {
+  transform: translateX(-100%);
+}
+
+.card-img-container img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.card-img-container img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 200%;
+}
