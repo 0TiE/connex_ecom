@@ -5,18 +5,9 @@ import { Card, Image, Row, Container } from "react-bootstrap";
 // import image4 from "../../../images/TPE-LG80-4-550x550.jpeg";
 // import image5 from "../../../images/lenovo.jpeg";
 // import { Image } from "react-bootstrap";
+import ReactCardSlider from 'react-card-slider-component';
 function TrendingProducts() {
-  const slides = [
-    {image:"https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png",title:"This is a title",description:"This is a description",brand: 'Brand 2',
- seeMoreLink: 'https://example.com/more2'},
-    {image:"https://abansit.lk/frontend_assets/img/products/LPABMONM215TN1.png",title:"This is a second title",description:"This is a second description"},
-    {image:"https://abansit.lk/frontend_assets/img/products/F55V4-560.png",title:"This is a third title",description:"This is a third description"},
-    {image:"https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png",title:"This is a title",description:"This is a description"},
-    {image:"https://abansit.lk/frontend_assets/img/products/LPABMONM215TN1.png",title:"This is a second title",title2:"This is a second title",description:"This is a second description"},
-    {image:"https://abansit.lk/frontend_assets/img/products/F55V4-560.png",title:"This is a third title",description:"This is a third description"},
-    
-]
-
+ 
 
   return (
     <> <center className="mb-5"><h1>Suggest for You</h1></center>

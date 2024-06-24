@@ -15,8 +15,8 @@ function Footer() {
       };
 
   return (
-    <Container className='mt-5'>
-      <Row className="justify-content-center d-flex">
+    <Container className=' mt-5'>
+      <Row className=" d-flex ms-5  ">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
                 <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>Buy</b></a></ListGroup.Item>
@@ -41,7 +41,7 @@ function Footer() {
                 <ListGroup.Item><a href="#" style={linkStyle}><FaInstagram style={{ marginRight: '8px' }} /> Instagram</a></ListGroup.Item>
             </ListGroup>
         </Col>
-        <Col xs={12} md={6} lg={3}>
+        <Col xs={12} md={6} lg={3} className=''>
             <ListGroup className="no-border" variant="flush">
                 <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>Help & Contact</b></a></ListGroup.Item>
                 <ListGroup.Item><a href="#" style={linkStyle}>Help & Support</a></ListGroup.Item>
