@@ -7,12 +7,16 @@ import './Cart.css';
 import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
 import {Card,Image} from "react-bootstrap/";
+import Header from "../Home/Header.js";
+import Footer from "../Footer/Footer.js";
 
 
 function Cart() {
   return (
 
     <>
+
+    <Header />
     <Container>
         <Row>
           <Col className='mt-5 mb-5'>
@@ -184,6 +188,7 @@ function Cart() {
           </Row>
         </Row>
       </Container>
+    <Footer />
     </>
   )
 }

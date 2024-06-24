@@ -1,0 +1,9 @@
+.company-logo{
+    width: 50%; 
+    height: auto;
+    border-radius: 20%;
+}
+
+.text-end{
+    text-align: right;
+}

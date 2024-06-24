@@ -2,9 +2,15 @@ import React from 'react'
 import { Container, Row, Col, Card, Table } from 'react-bootstrap';
 import './OrderTrack.css';
 import OrderTrackProgressBar from '../../components/OrderTrackProgressBar/OrderTrackProgressBar'
+import Header from "../Home/Header.js";
+import Footer from "../Footer/Footer.js";
 
 function OrderTrack() {
   return (
+
+    <>
+    <Header />
+
     <Container>
             <Row className="mt-5 mb-5">
                 <Col>
@@ -62,7 +68,10 @@ function OrderTrack() {
                     </Card>
                 </Col>
             </Row>
-        </Container>
+    </Container>
+
+    <Footer />            
+    </>
   )
 }
 

@@ -3,23 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserLoginPage from './pages/UserLoginPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import PartnerLoginPage from './pages/PartnerLoginPage';
 
-
 import Home1 from './components/Home/Home';
-import Register from './components/Register/Register'
-import Footer from './components/Footer/Footer'
-import SingleProduct from './components/SingleProduct/SingleProduct'
-import Cart from './components/Cart/Cart'
-import Checkout from './components/Checkout/Checkout'
-import OrderTrack from './components/OrderTrack/OrderTrack'
-import ProductFilter from './components/ProductFilter/ProductFilter'
+import Register from './components/Register/Register';
+import Footer from './components/Footer/Footer';
+import SingleProduct from './components/SingleProduct/SingleProduct';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import OrderTrack from './components/OrderTrack/OrderTrack';
+import ProductFilter from './components/ProductFilter/ProductFilter';
+import Watchlist from './components/Watchlist/Watchlist';
+import Profile from './components/Profile/Profile';
+import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
@@ -40,6 +44,10 @@ root.render(
       <Route path='/Checkout' element={<Checkout />} />
       <Route path='/OrderTrack' element={<OrderTrack />} />
       <Route path='/ProductFilter' element={<ProductFilter />} />
+      <Route path='/Watchlist' element={<Watchlist />} />
+      <Route path='/Profile' element={<Profile />} />
+      <Route path='/ProfileComponent' element={<ProfileComponent />}/>
+
     </Routes>
   </BrowserRouter>
 );

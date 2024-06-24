@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "../Footer/Footer.js";
 import ProductSuppliers from "./ProductSuppliers";
 import React from "react";
 import PromoCarousel from "./Carousel/PromoCarousel";
@@ -14,6 +15,8 @@ function Home() {
       {/* <Categroies/> */}
       <ProductSuppliers />
       <TrendingProducts />
+
+      <Footer />
       
     </>
   );

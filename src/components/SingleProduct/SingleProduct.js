@@ -16,6 +16,8 @@ import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
 import Accordion from 'react-bootstrap/Accordion';
 import {Card,Image} from "react-bootstrap/";
+import Header from "../Home/Header.js";
+import Footer from "../Footer/Footer.js";
 
 function SingleProduct() {
 
@@ -29,6 +31,7 @@ function SingleProduct() {
 
     <>
 
+    <Header />
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
@@ -244,7 +247,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-
+    <Footer />
     </>
   );
 }

@@ -1,0 +1,19 @@
+.btnpayment{
+    background: linear-gradient(#858e96, #60696b);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btnpayment:hover{
+    background: linear-gradient(#858e96, #60696b);
+    border: none;
+    transform: scale(1.1);
+}
+
+@media (max-width:991px){
+    .paymentbtn{
+        margin-top:10px;
+    }
+}

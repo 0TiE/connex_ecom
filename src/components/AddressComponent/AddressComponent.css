@@ -1,0 +1,12 @@
+.input-group .form-control {
+    border-right: 0;
+}
+
+.input-group .input-group-append .input-group-text {
+    background-color: #fff;
+    border-left: 0;
+}
+
+.input-group .input-group-append .input-group-text i {
+    color: #495057;
+}

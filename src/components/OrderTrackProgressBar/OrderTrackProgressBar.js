@@ -11,7 +11,7 @@ function OrderTrackProgressBar() {
             <h5>Accepted</h5><br></br>
             <span>Thu, Apr 21</span>
         </div>
-        <div >---</div>
+        <div class="seperator"></div>
         <div class="step">
             <span class="number-container">
                                     <span class="number">2</span>
