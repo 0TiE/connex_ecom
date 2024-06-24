@@ -97,7 +97,7 @@ function WatchlistComponent() {
                         <tr key={index}>
                         <td className="align-middle">
                             <Row>
-                            <Col xs={4} sm={3} md={3} lg={4}>
+                            <Col xs={4} sm={5} md={5} lg={4}>
                                 <img
                                 src={item.imageUrl}
                                 alt={item.name}
