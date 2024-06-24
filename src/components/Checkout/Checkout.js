@@ -6,10 +6,15 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
 import './Checkout.css';
+import Header from "../Home/Header.js";
+import Footer from "../Footer/Footer.js";
 
 function Checkout() {
   return (
     <>
+
+    <Header />
+
     <Container>
         <Row>
           <Col className='mt-5 mb-5'>
@@ -224,6 +229,8 @@ function Checkout() {
         </Row>
         
       </Container>
+      
+    <Footer />
     </>
   )
 }

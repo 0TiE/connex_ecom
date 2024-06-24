@@ -17,9 +17,7 @@ import sliderimage1 from '../../images/slider.jpg'
 import sliderimage from '../../images/image.png'
 import Accordion from 'react-bootstrap/Accordion';
 import {Card,Image} from "react-bootstrap/";
-import Header from '../Home/Header';
-import Footer from '../Footer/Footer';
-import TRENDnet from '../../videos/TRENDnet 12-Port 10G Layer 2 Managed SFP+ Switch - TL2-F7120.mp4';
+
 function SingleProduct() {
 
     const breadcrumbitem = {
@@ -31,7 +29,7 @@ function SingleProduct() {
   return (
 
     <>
-<Header/>
+
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
@@ -257,7 +255,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-<Footer/>?
+
     </>
   );
 }

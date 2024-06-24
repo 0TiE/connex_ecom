@@ -179,7 +179,7 @@ function Register() {
                         </Button>
                     </Col>
                     <Col className="d-flex justify-content-end">
-                        <Button variant="info" className="text-white" size="lg" onClick={handleNextClick}>
+                        <Button variant="info+" className="text-white" size="lg" onClick={handleNextClick}>
                         Next
                         </Button>
                     </Col>
@@ -199,6 +199,7 @@ function Register() {
                     <Form.Label>First Name</Form.Label>
                     <Form.Control type="text" required />
                     </Form.Group>
+                    
 
                     <Form.Group as={Col} controlId="formGridlastname">
                     <Form.Label>Last Name</Form.Label>
