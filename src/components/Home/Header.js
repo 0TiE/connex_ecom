@@ -1,29 +1,24 @@
+import React from "react";
 import {
   Button,
   Col,
   Container,
-  Dropdown,
-  DropdownButton,
   Form,
-  InputGroup,
   Navbar,
   Nav,
+  Offcanvas,
   FormControl,
   Row,
 } from "react-bootstrap";
-import React from "react";
+
 import image2 from "../../images/connex360.png";
-import { useNavigate } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
 function Header() {
-  const navigate=useNavigate();
   return (
     <>
-
-      <Container className="mt-3">
+      <Container className="mt-3 border-bottom ">
         <Row className="d-flex justify-content-between">
           <Col>
             <h6 className="text">Hello Partner !</h6>
@@ -33,29 +28,27 @@ function Header() {
             <h6 className="helptext text-success">Help & Support</h6>
           </Col>
         </Row>
-        <hr></hr>
       </Container>
-    <Navbar expand="lg mb-5">
-        <Container>
-          <Navbar.Brand href="#home"><img src={image2} alt="logo" className="logo"/></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-            <Nav className="mx-auto">
-              <Form className="d-flex w-100">
-                <div>
-                <InputGroup>
-                  <div className="dropdownbtn">
-                  <DropdownButton
-                    as={InputGroup.Prepend}
-                    variant="outline-secondary"
-                    title="Categories"
-                    id="input-group-dropdown-1"
-                  >
-                    <Dropdown.Item href="#">Category 1</Dropdown.Item>
-                    <Dropdown.Item href="#">Category 2</Dropdown.Item>
-                    <Dropdown.Item href="#">Category 3</Dropdown.Item>
-                  </DropdownButton>
-                  </div>
+
+      <Navbar expand="lg" className="mb-5 ">
+        <Container fluid>
+          <Navbar.Brand href="../home" className="ps-3">
+            <img src={image2} alt="logo" className="logo w-50" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar-expand-lg"
+            aria-labelledby="offcanvasNavbarLabel-expand-lg"
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
+                Menu
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-center flex-grow-1 pe-3">
+                <Form className="d-flex w-100">
                   <FormControl
                     type="search"
                     placeholder="Search"
@@ -63,20 +56,24 @@ function Header() {
                     aria-label="Search"
                   />
                   <Button variant="primary">
-                    <FaSearch />
+                    Search
                   </Button>
-                </InputGroup>
-                </div>
-              </Form>
-            </Nav>
-            <Nav className="ml-auto">
-              <Nav.Link href="#"><i className="bi bi-person h4"></i> Logout</Nav.Link>
-              <Nav.Link href="#"><i className="bi bi-cart3 h4"></i></Nav.Link>
-            </Nav> 
-          </Navbar.Collapse>
+                  <Nav.Link href="#" className="d-none d-lg-block ms">Advance </Nav.Link>
+                </Form>
+              </Nav>
+              <Nav className="justify-content-end flex-grow-1 pe-5">
+                <Nav.Link href="#"><i className="bi bi-person h4"></i></Nav.Link>
+                <Nav.Link href="#"><i className="bi bi-cart3 h4"></i><span className="badge rounded-pill badge-notification bg-primary">1</span> </Nav.Link>
+                <Nav.Link href="#"><i className="bi bi-heart h4"></i><span className="badge rounded-pill badge-notification bg-danger">1</span> </Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
         </Container>
       </Navbar>
+
+      
     </>
   );
 }
+
 export default Header;

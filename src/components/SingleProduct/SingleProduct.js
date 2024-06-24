@@ -14,9 +14,12 @@ import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 import sliderimage1 from '../../images/slider.jpg'
+import sliderimage from '../../images/image.png'
 import Accordion from 'react-bootstrap/Accordion';
 import {Card,Image} from "react-bootstrap/";
-
+import Header from '../Home/Header';
+import Footer from '../Footer/Footer';
+import TRENDnet from '../../videos/TRENDnet 12-Port 10G Layer 2 Managed SFP+ Switch - TL2-F7120.mp4';
 function SingleProduct() {
 
     const breadcrumbitem = {
@@ -28,7 +31,7 @@ function SingleProduct() {
   return (
 
     <>
-
+<Header/>
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
@@ -54,7 +57,16 @@ function SingleProduct() {
               className="mySwiper2"
             >
               <SwiperSlide>
-              <iframe className='youtubevideo' src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <video
+                    className="product-video w-100"
+                    src={TRENDnet}
+                    controls
+                    autoPlay
+                    loop
+                    muted
+                  />
+                {/* <video src={TRENDnet} controls  autoPlay className='w-100'/> */}
+              {/* <iframe className='youtubevideo' src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
               </SwiperSlide>
               <SwiperSlide>
                 <img className='sliderimage' src={sliderimage1} />
@@ -95,7 +107,8 @@ function SingleProduct() {
               className="mySwiper mt-5"
             >
               <SwiperSlide className='ac'>
-              <iframe width="130" height="150" src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <img className='sliderimage' src={sliderimage} />
+              {/* <video src={TRENDnet}   className='w-100'/> */}
               </SwiperSlide>
               <SwiperSlide>
                 <img src={sliderimage1} />
@@ -142,8 +155,8 @@ function SingleProduct() {
                             <Col lg="5" md='6' sm='6'>
                                 <p className='productQuantity'>Quantity:</p>
                             </Col>
-                            <Col lg="4" md='6' sm='6'>
-                                <Form.Group as={Col} controlId="formGridquantitybox" className='quantitybox' type="number">
+                            <Col lg="4" md='6' sm='6' >
+                                <Form.Group as={Col} controlId="formGridquantitybox" className='quantitybox border-0' type="number">
                                     <Form.Control />
                                 </Form.Group>
                             </Col>
@@ -170,7 +183,7 @@ function SingleProduct() {
             </Col>
         </Row>
 
-        <Row className='mt-5 mb-5'>
+        <Row className='mb-5'>
           <Col>
             <h3>Related Items</h3>
           </Col>
@@ -214,8 +227,8 @@ function SingleProduct() {
 
         <Row className='mt-5'>
           <Col>
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
+              <Accordion defaultActiveKey="1">
+                <Accordion.Item eventKey="1">
                   <Accordion.Header><b>Description</b></Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -244,7 +257,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-
+<Footer/>?
     </>
   );
 }

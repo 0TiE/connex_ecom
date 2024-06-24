@@ -8,45 +8,37 @@ function ProductSuppliers() {
   return (
     <>
       <Row
-        className="justify-content-center align-items-center m-5 border-black "
-        sm={6}
+        className="justify-content-center  m-5 border-black d-none d-sm-flex "
+       sm={6} 
       >
-        <Col lg={2} sm={1} className=" p-1 align-items-center ">
+        <Col lg={1}  className=" p-1 align-items-center ">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col lg={1} className=" p-1 align-items-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col  lg={1} className=" p-1 align-items-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col  lg={1} className=" p-1 align-items-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col  lg={1} className=" p-1 align-items-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col lg={1} className=" p-1 align-items-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center ">
+        <Col lg={1}  className=" p-1 align-items-center ">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col  lg={1} className=" p-1 align-items-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
+        <Col  lg={1} className=" p-1 align-items-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
-          <Image src={image3} thumbnail />
-        </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
-          <Image src={image3} thumbnail />
-        </Col>
-        <Col lg={2} sm={1} className=" p-1 align-items-center">
-          <Image src={image2} thumbnail />
-        </Col>
+        
       </Row>
     </>
   );
