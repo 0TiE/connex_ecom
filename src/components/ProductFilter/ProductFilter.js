@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import './ProductFilter.css';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import Sidebar from '../ProductFilterSidebar/ProductFilterSidebar';
