@@ -9,10 +9,13 @@ import {
   Offcanvas,
   FormControl,
   Row,
+  Dropdown,
+  Badge,
 } from "react-bootstrap";
 
 import image2 from "../../images/connex360.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Ensure bootstrap-icons are imported
 import './Header.css';
 
 function Header() {
@@ -58,20 +61,35 @@ function Header() {
                   <Button variant="primary">
                     Search
                   </Button>
-                  <Nav.Link href="#" className="d-none d-lg-block ms">Advance </Nav.Link>
+                  <Nav.Link href="../ProductFilter" className="d-none d-lg-block ms">Advance </Nav.Link>
                 </Form>
               </Nav>
               <Nav className="justify-content-end flex-grow-1 pe-5">
-                <Nav.Link href="#"><i className="bi bi-person h4"></i></Nav.Link>
-                <Nav.Link href="#"><i className="bi bi-cart3 h4"></i><span className="badge rounded-pill badge-notification bg-primary">1</span> </Nav.Link>
-                <Nav.Link href="#"><i className="bi bi-heart h4"></i><span className="badge rounded-pill badge-notification bg-danger">1</span> </Nav.Link>
+              <Dropdown align="end" className="text-decoration-none no-caret">
+      <Dropdown.Toggle variant="link" id="dropdown-profile" className="nav-link">
+        <i className="bi bi-person h4"></i>
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item href="../profile">Profile</Dropdown.Item>
+        <Dropdown.Item href="../settings">Settings</Dropdown.Item>
+        <Dropdown.Item href="../logout">Logout</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
+                <Nav.Link href="../Cart">
+                  <i className="bi bi-cart3 h4"></i>
+                  <Badge pill bg="primary" className="badge-notification">1</Badge>
+                </Nav.Link>
+
+                <Nav.Link href="../Watchlist">
+                  <i className="bi bi-heart h4"></i>
+                  <Badge pill bg="danger" className="badge-notification">1</Badge>
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-
-      
     </>
   );
 }

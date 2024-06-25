@@ -13,7 +13,7 @@ import UserLoginPage from './pages/UserLoginPage';
 import AdminLoginPage from './pages/AdminLoginPage';
 import PartnerLoginPage from './pages/PartnerLoginPage';
 
-import Home1 from './components/Home/Home';
+import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import Footer from './components/Footer/Footer';
 import SingleProduct from './components/SingleProduct/SingleProduct';
@@ -35,7 +35,7 @@ root.render(
       <Route path='/UserLogin' element={<UserLoginPage />} />
       <Route path='/AdminLogin' element={<AdminLoginPage />} />
       <Route path='/PartnerLogin' element={<PartnerLoginPage />} />
-      <Route path='/Home' element={<Home1 />} />
+      <Route path='/Home' element={<Home />} />
       <Route path='/PromoCarousel' element={<PromoCarousel />} />
       <Route path='/Register' element={<Register />} />
       <Route path='/Footer' element={<Footer />} />
@@ -47,6 +47,7 @@ root.render(
       <Route path='/Watchlist' element={<Watchlist />} />
       <Route path='/Profile' element={<Profile />} />
       <Route path='/ProfileComponent' element={<ProfileComponent />}/>
+      <Route path='/ProductFilter' element={<ProductFilter />}/>
 
     </Routes>
   </BrowserRouter>
