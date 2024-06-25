@@ -7,38 +7,34 @@ import { Col, Image, Row } from "react-bootstrap";
 function ProductSuppliers() {
   return (
     <>
-      <Row
-        className="justify-content-center  m-5 border-black d-none d-sm-flex "
-       sm={6} 
-      >
-        <Col lg={1}  className=" p-1 align-items-center ">
+      <Row className="justify-content-center m-5">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col  lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col  lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col  lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col lg={1}  className=" p-1 align-items-center ">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image3} thumbnail />
         </Col>
-        <Col  lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image2} thumbnail />
         </Col>
-        <Col  lg={1} className=" p-1 align-items-center">
+        <Col xs={6} sm={4} md={3} lg={2} className="p-2 d-flex justify-content-center">
           <Image src={image2} thumbnail />
         </Col>
-        
       </Row>
     </>
   );

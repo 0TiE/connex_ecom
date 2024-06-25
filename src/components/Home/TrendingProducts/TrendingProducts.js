@@ -5,7 +5,7 @@ import { Card, Image, Row, Container } from "react-bootstrap";
 // import image4 from "../../../images/TPE-LG80-4-550x550.jpeg";
 // import image5 from "../../../images/lenovo.jpeg";
 // import { Image } from "react-bootstrap";
-// import ReactCardSlider from 'react-card-slider-component';
+import ReactCardSlider from 'react-card-slider-component';
 function TrendingProducts() {
  
 
@@ -32,7 +32,7 @@ function TrendingProducts() {
               </Card.Body>
               
               <Card.Body >
-              <Card.Link href="../SingleProduct"  className="text-dark">Lenovo</Card.Link>
+              <Card.Link href="/products/SingleProductView"  className="text-dark">Lenovo</Card.Link>
               <Card.Link href="#">{'  '}More</Card.Link>
               </Card.Body>
             </Card>
@@ -179,13 +179,9 @@ function TrendingProducts() {
             </Card> */}
           </Row>
         </Container>
-        
-      
       </div>
-
-      {/* <ReactCardSlider slides={slides}/> */}
-  
     </>
+
   );
 }
 

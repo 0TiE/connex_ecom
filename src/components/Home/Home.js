@@ -6,6 +6,7 @@ import PromoCarousel from "./Carousel/PromoCarousel";
 import TrendingProducts from "./TrendingProducts/TrendingProducts.js";
 
 
+
 function Home() {
   return (
     <>
