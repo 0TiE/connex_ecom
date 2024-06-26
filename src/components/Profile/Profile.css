@@ -1,13 +1,22 @@
-.navlink{
+.sidebar.collapsed {
+  width: 60px;
+}
+  .sidebar-title {
+    transition: opacity 0.3s ease;
+  }
+
+  .navlink {
     color: #000000;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     box-sizing: border-box;
     border-radius: 50px;
-    padding: 10px 15px;
+    padding: 10px;
     border: 2px solid #0b3866;
     margin-top: 10px;
-}
+    transition: all 0.3s ease; 
+    overflow: hidden; 
+  }
 
 .navlink:hover,
 .navlink:active{
@@ -24,5 +33,25 @@
   @media (max-width:991px){
     .text-end {
         text-align: left !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+   
+    .sidebar {
+      height: auto;
+      width: 100%;
+    }
+
+    .sidebar .navlink .nav-icon {
+      font-size: 1.5rem;
+    }
+  
+    .sidebar-title {
+      display: none;
+    }
+  
+    .sidebar {
+      padding: 1rem;
     }
   }
