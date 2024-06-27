@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import cartimg from '../../images/slider.jpg';
+
 import './Cart.css';
 import Button from 'react-bootstrap/Button';
 import Form from "react-bootstrap/Form";
@@ -27,7 +27,7 @@ function Cart() {
           <Col lg='7'>
             <Row className='mb-4'>
               <Col xs='12' md='6'>
-                <Image className='cartimg rounded' src={cartimg} fluid />
+                <Image className='cartimg rounded' src='https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png' fluid />
               </Col>
               <Col xs='12' md='6'>
                 <div className="content">
@@ -58,7 +58,7 @@ function Cart() {
             </Row>
             <Row className='mb-4'>
               <Col xs='12' md='6'>
-                <Image className='cartimg rounded' src={cartimg} fluid />
+                <Image className='cartimg rounded'  src='https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png' fluid />
               </Col>
               <Col xs='12' md='6'>
                 <div className="content">
@@ -89,7 +89,7 @@ function Cart() {
             </Row>
             <Row className='mb-4'>
               <Col xs='12' md='6'>
-                <Image className='cartimg rounded' src={cartimg} fluid />
+                <Image className='cartimg rounded'  src='https://abansit.lk/frontend_assets/img/products/LVPCLCEL4GB256W.png' fluid />
               </Col>
               <Col xs='12' md='6'>
                 <div className="content">

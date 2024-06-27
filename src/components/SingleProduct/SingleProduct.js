@@ -17,7 +17,9 @@ import sliderimage1 from '../../images/slider.jpg'
 import sliderimage from '../../images/image.png'
 import Accordion from 'react-bootstrap/Accordion';
 import {Card,Image} from "react-bootstrap/";
-
+import TRENDnet from "../../videos/TRENDnet 12-Port 10G Layer 2 Managed SFP+ Switch - TL2-F7120.mp4";
+import Header from '../Home/Header';
+import Footer from '../Footer/Footer';
 function SingleProduct() {
 
     const breadcrumbitem = {
@@ -29,11 +31,11 @@ function SingleProduct() {
   return (
 
     <>
-
+<Header/>
     <Container className='mt-5 mb-5'>
         <Breadcrumb className='mb-5'>
             <Breadcrumb.Item href="#" className="breadcrumbitem" style={breadcrumbitem}>Home</Breadcrumb.Item>
-            <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/" className="breadcrumbitem">
+            <Breadcrumb.Item href="#" className="breadcrumbitem">
                 Products
             </Breadcrumb.Item>
             <Breadcrumb.Item active className="breadcrumbitem">Single Product</Breadcrumb.Item>
@@ -67,31 +69,31 @@ function SingleProduct() {
               {/* <iframe className='youtubevideo' src="https://www.youtube.com/embed/FCe1vPuB954?si=Ji0lDq6o_STvlgCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img  alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt=''className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
               <SwiperSlide>
-                <img className='sliderimage' src={sliderimage1} />
+                <img alt='' className='sliderimage' src={sliderimage1} />
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -255,7 +257,7 @@ function SingleProduct() {
         </Row>
 
     </Container> 
-
+<Footer/>
     </>
   );
 }

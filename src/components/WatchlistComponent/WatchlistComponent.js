@@ -82,7 +82,7 @@ function WatchlistComponent() {
     <Container>
         <Row>
             <h3>Orders</h3>
-            <Card className="mb-3 mt-4" style={{ backgroundColor: '#D9D9D9' }}>
+            <Card className="mb-3 mt-4 border-0" style={{ backgroundColor: '#' }}>
                 <Card.Body>
                 <Table responsive>
                     <thead>

@@ -16,12 +16,11 @@ function Footer() {
 
   return (
     <Container className=' mt-5'>
-      <Row className=" d-flex ms-4">
+      <Row className=" d-flex ms-5  ">
         <Col xs={12} md={6} lg={3}>
             <ListGroup className="no-border" variant="flush">
                 <ListGroup.Item><a href="#" style={linkStyle}><b className='listheading'>Buy</b></a></ListGroup.Item>
                 <ListGroup.Item><a href="#" style={linkStyle}>Products</a></ListGroup.Item>
-                <ListGroup.Item><a href="#" style={linkStyle}>Registration</a></ListGroup.Item>
                 <ListGroup.Item><a href="#" style={linkStyle}>Promo</a></ListGroup.Item>
             </ListGroup>
         </Col>
