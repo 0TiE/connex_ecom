@@ -92,7 +92,7 @@ function Profile() {
               </Nav.Link>
             </Nav>
           </Col>
-          <Col lg="9" md="8" sm="12" className="mt-4">
+          <Col lg="9" md="8" sm="12" className="mt-4 multi-component">
             <CSSTransition in={true} appear={true} timeout={500} classNames="fade" key={activeComponent}>
               {renderComponent()}
             </CSSTransition>

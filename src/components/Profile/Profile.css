@@ -41,6 +41,11 @@
     .sidebar {
       height: auto;
       width: 100%;
+      display: none;
+    }
+
+    .multi-component{
+      display: none;
     }
 
     .sidebar .navlink .nav-icon {

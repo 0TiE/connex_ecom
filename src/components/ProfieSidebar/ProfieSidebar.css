@@ -1,0 +1,12 @@
+.sidenav {
+    background-color: #0b3866 !important;
+    color: #fff;
+    margin-top: 25vh;
+    border-radius: 0 20px 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navicon{
+    color: #fff;
+}
