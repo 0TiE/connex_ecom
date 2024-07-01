@@ -25,6 +25,8 @@ import Watchlist from './components/Watchlist/Watchlist';
 import Profile from './components/Profile/Profile';
 import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 
+import ProfieSidebar from './components/ProfieSidebar/ProfieSidebar'
+
 import PromoCarousel from './components/Home/Carousel/PromoCarousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,6 +50,7 @@ root.render(
       <Route path='/Profile' element={<Profile />} />
       <Route path='/ProfileComponent' element={<ProfileComponent />}/>
       <Route path='/ProductFilter' element={<ProductFilter />}/>
+      <Route path='/ProfieSidebar' element={<ProfieSidebar />}/>
 
     </Routes>
   </BrowserRouter>
